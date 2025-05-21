@@ -46,14 +46,59 @@
             exceeding portfolio growth targets, and driving value through problem-solving, data analysis,
             and customer service. <br><br>Bilingual graduate with experience in educational work in South Korea,
             fostering a continuous learning mindset and a dedication to personal and professional development.
+            <br>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+            <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+            <p class="tab-links" onclick="opentab('education', event)">Education</p>
 
-          </p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Web Developer</span><br>Front/Back-End</li>
+              <li><span>UI/UX Designer</span><br>Web App Interfaces</li>
+              <li><span>App Developer</span><br>Building Apple/Android OS Apps</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>April 2023 - May 2025</span><br>Client Relationship Manager @ Brook Green Supply</li>
+              <li><span>May 2019 - April 2023</span><br>Account Manager @ Pulse Business Energy</li>
+              <li><span>Mar 2018 - May 2019</span><br>English Instructor @ 광운초등학교 - Kwangwoon Elementary School</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2025 - Present</span><br>Web Dev @ Sigma School</li>
+              <li><span>2006 - 2010</span><br>Human Geography @ University of Portsmouth</li>
+              <li><span>2004 - 2006</span><br>English Lit, Computing, Geography @ City & Islington College</li>
+            </ul>
+          </div>
+
+          </ul>
         </div>
+        </p>
       </div>
     </div>
   </div>
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
 
-
+    function opentab(tabname, event) {
+      for (let tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (let tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  </script>
 </body>
 
 </html>
