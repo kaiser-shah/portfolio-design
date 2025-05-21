@@ -1,23 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
+
+<head>
+  <title>Personal Portfolio Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="script.js"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="./Images/logo.png" class="logo" height="flex">
+
+
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <p>Web Developer</p>
+        <br>
+        <h1>Hi, I'm <span>Shah</span> <br> from London, United Kingdom</h1>
+      </div>
+    </div>
+  </div>
+  <!------------about------------>
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="./Images/user.png">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Highly motivated and results-oriented professional with 15+ years of experience,
+            including 11+ in a corporate environment and 4+ in the energy industry. <br><br>
+            Proven track record of building and managing strong client relationships,
+            exceeding portfolio growth targets, and driving value through problem-solving, data analysis,
+            and customer service. <br><br>Bilingual graduate with experience in educational work in South Korea,
+            fostering a continuous learning mindset and a dedication to personal and professional development.
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
 </html>
